@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- javascript code from fontawesome.com where you get application icons from -->
+    <script
+      src="https://kit.fontawesome.com/2db7a249bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- This container handles the header section -->
+    <div id="header">
+      <div id="container">
+        <nav>
+          <img src="images/Name Timothy.jpg" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <!-- times icon -->
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+              <!--------------- menu icon ---------->
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <!-- This container handles the details section -->
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I'm <span> Timothy</span> <br />
+            Macharia From Kenya.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------About---------------------  -->
+
+    <div id="about">
+      <div class="container">
+        <!-- adding a new row -->
+        <div class="row">
+          <!-- adding columns -->
+          <div class="about-col-1">
+            <img src="images/user.JPG" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I hereby express my interest for a developers position in your organization,
+              being a developer with vast experience in the industry and willing to learn new technological advancements.
+              <br>
+              My honesty, passion, devotion, hard work, creativity, teamwork and play make me confident on top of my knowledge, 
+              skills, training and experience that would be of additional importance to any company's fraternity in rendering 
+              services and foreseeing it achieve its mission and objectives.
+            </p>
+
+            <!-- This code adds and alters the tabs navigation on skills,experience and education -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span> <br />
+                  Designing Web/App interfaces
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>October 2018 - Current </span> <br />Freelancer
+                  developer dealing with multiple solutions.
+                </li>
+                <li>
+                  <span>January 2018 - April 2018</span><br />IT Intern in
+                  Gertrude's Children Hospital(Nairobi-Kenya)
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>January 2016 - October 2018</span><br />Student in
+                  Institute Of Advanced Technology
+                </li>
+                <li>
+                  <span>2009 - 2012</span><br />Student in Kahuho Uhuru High
+                  School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Services---------------------  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <!--  icon -->
+            <h2>Software Development.</h2>
+            <p>
+              Development of customized Web and Desktop Applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <!--  icon -->
+            <h2>UI/UX Design</h2>
+            <p>
+              Designing of beautiful and interactive user-interfaces for applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <!--  icon -->
+            <h2>Desktop Apps Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              dicta amet saepe impedit, debitis recusandae nobis perspiciatis
+              quisquam illo numquam deleniti, odio porro! Veritatis vero,
+              sapiente ipsum provident illum necessitatibus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------portfolio------------------------------------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+      </div>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Sales Of Computer Accessories</h3>
+            <p>Clients order new computer accessories for desktop applications installation</p>
+            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpg" alt="">
+          <div class="layer">
+            <h3>Computers Repair</h3>
+            <p>I troubleshoot and repair computer hardware accessories</p>
+            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+       </div>
+        <div class="work">
+          <img src="images/work-3.jpg" alt="">
+          <div class="layer">
+            <h3>Software Development</h3><br>
+            <p> -Desktop point of sale system</p><br>
+            <p> -Web school management system</p><br>
+            <p> -Desktop carwash system</p><BR>
+            <p> -Desktop Savings and Credit Financial System</p>
+            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div> 
+      </div>
+    </div>
+
+      <!-- adding a button -->
+      <a href="#" class="btn">See More</a>
+
+      <!-- ---------------------------------------Contact------------------------------------------------- -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> timomwathi1@gmail.com</p>    
+            <p><i class="fa-solid fa-square-phone"></i> +254 791 375 030</p>
+
+               <!-- adding social media platforms -->
+            <div class="social-icons">
+              <a href="https://www.facebook.com/timoh.macharia"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/timoh-macharia-7b354215b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+          </div>
+          
+          <div class="contact-right">
+             <!-- adding form with for user input -->
+            <form  name="submit-to-google-sheet">                 <!--this name 'submit-to-google-sheet' has been derived from the google docs script at the bottom-->
+             <input type="text" name="Name" placeholder="Your Name" required>
+             <input type="email" name="Email" placeholder="Your Email" required>
+             <textarea name="Message"  rows="6" placeholder="Your Message"> </textarea>
+         <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <!-- --------display message when submission is complete----------- -->
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+<!-- ---------copyright section-------------' -->
+         <div class="copyright">
+          <p>Copyright © Timothy. Made with <i class="fa-solid fa-heart"></i> by TimServe Tech</p>
+         </div>
+     </div>
+   <!-- ---------------------------------------Javascript------------------------------------------------- -->
+      <!-- adding javascript code to application -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      // defining tab-contents in javascript using function
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          /* code to clear data on the active link*/
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          /* code to clear data on the active tab content*/
+          tabcontent.classList.remove("active-tab");
+        }
+
+        // adding event so that tab-content will appear when corresponding active-link is pressed
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+ <!-----------adding code for the side menu using javascript -->
+    <script>
+      var sidemenu=document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right= "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right= "-200px";
+      }
+    </script>  
+
+    <!-- -------contact form javascript code--------------------- -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw0-w4yrqE2qlzAvJsuaKHFG_fktA_RD39qTXXZdLPI4fBch2HHOBHYX8sljvJVMFDyIg/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById ("msg")      /*-form submission message*/
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+
+              /*remove the success message function*/
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
